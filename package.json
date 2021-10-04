@@ -1,0 +1,19 @@
+{
+  "name": "codemod-preso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "transform-test.js",
+  "scripts": {
+    "transform:interface-i": "jscodeshift -t transforms/interface-i.js example-code-base/**.ts",
+    "transform:remove-console-log": "jscodeshift -t transforms/remove-console-log.js example-code-base/**.ts",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jscodeshift": "^0.13.0"
+  },
+  "devDependencies": {
+    "jest": "^27.2.4"
+  }
+}
